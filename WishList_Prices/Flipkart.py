@@ -27,6 +27,3 @@ print(f'The Price of sd card is {sdcard}')
 UCBShoes = GetProductPrice("https://www.flipkart.com/united-colors-benetton-espadrilles-men/p/itmf3yyguydgkpqa?pid=SHOEV3TZTZXGC4SM&otracker=wishlist&lid=LSTSHOEV3TZTZXGC4SMGL7DEV&fm=organic&iid=4396fe3d-c0cd-4971-a13e-3fb36bfdb084.SHOEV3TZTZXGC4SM.PRODUCTSUMMARY&ppt=hp&ppn=hp")
 
 print(f'The Price of UCB espadrilles is {UCBShoes}')
-
-
-

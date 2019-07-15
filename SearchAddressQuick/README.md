@@ -9,4 +9,4 @@ Steps
 
 # OR 
 
- Open the .bat file and it will search the text(address) in your Clipboard. 
+ Open the .bat file and it will search with the text(address) in your Clipboard. 

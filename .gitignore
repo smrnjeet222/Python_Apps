@@ -5,3 +5,5 @@ TwilioTextApp/credentials.py
 WebMap/.ipynb_checkpoints/folium-checkpoint.ipynb
 Twitter_Bot/confidential.py
 Twitter_Bot/__pycache__/confidential.cpython-37.pyc
+SudokuSolver/.ipynb_checkpoints/solvereasy-checkpoint.ipynb
+SudokuSolver/__pycache__/solver.cpython-38.pyc

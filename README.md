@@ -11,7 +11,7 @@ Some productive Python Programmes used in day to day life.
   <img src="https://github.com/smrnjeet222/Python_Apps/blob/master/Corona_Updates/heading.jpg">
 </p>
 
-# [Space-Invaders](https://github.com/smrnjeet222/Python_Apps)
+# [Space-Invaders](https://github.com/smrnjeet222/Python_Apps/tree/master/Space-invaders)
 
 <p align="center">
   <img src="https://github.com/smrnjeet222/Python_Apps/blob/master/Space-invaders/Sc.jpg">

@@ -24,7 +24,7 @@ Some productive Python Programmes used in day to day life.
   <img align="left" width="400em" src="https://github.com/smrnjeet222/Python_Apps/blob/master/SudokuSolver/2.png">
  </p>
  
- <br><br><br><br><br><br><br><br><br><br><br>
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # [Space-Invaders](https://github.com/smrnjeet222/Python_Apps/tree/master/Space-invaders)
 

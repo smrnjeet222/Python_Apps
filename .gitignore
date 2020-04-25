@@ -8,3 +8,6 @@ Twitter_Bot/__pycache__/confidential.cpython-37.pyc
 SudokuSolver/.ipynb_checkpoints/solvereasy-checkpoint.ipynb
 SudokuSolver/__pycache__/solver.cpython-38.pyc
 *.pyc
+Scraping/Sudoku.com_AI_Solver.py
+JarvisAI/credentials.json
+JarvisAI/Voices

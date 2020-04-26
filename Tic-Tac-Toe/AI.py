@@ -28,9 +28,9 @@ def isWinner(bo, le):
 def playerMove():
     run = True
     while run:
-        move = input("\n>>> Please select a position to place an 'X' (1_9): ")
         try:
-            move = int(move)
+            move = int(
+                input("\n>>> Please select a position to place an 'X' (1_9): "))
             if move > 0 and move < 10:
                 if spaceIsFree(move):
                     run = False
@@ -43,12 +43,40 @@ def playerMove():
             print("\n--- Please type a number!")
 
 
+def isBoardFull(board):
+    if board.count(' ') > 1:
+        return False
+    else:
+        return True
+
+
 def selectRandom(li):
     r = random.randrange(0, len(li))
     return li[r]
 
 
-def compMove():
+def compMove(diff):
+    if diff == 0:
+        return dumbAI()
+    elif diff == 1:
+        return noobAI()
+    elif diff == 2:
+        return expertAI()
+    return 0
+
+
+def dumbAI():
+    pos = random.randint(1, 9)
+    m = board[pos]
+    while m != ' ':
+        if isBoardFull(board):
+            return 0
+        pos = random.randint(1, 9)
+        m = board[pos]
+    return pos
+
+
+def noobAI():
     possibleMoves = [x for x, le in enumerate(board) if le == ' ' and x != 0]
     move = 0
 
@@ -81,40 +109,35 @@ def compMove():
     return move
 
 
-def isBoardFull(board):
-    if board.count(' ') > 1:
-        return False
-    else:
-        return True
+def expertAI():
+    return 0
 
 
 def printBoard(board):
     p_b = [' ']*10
-    for i in range(1,10):
+    for i in range(1, 10):
         if board[i] == 'X':
             p_b[i] = ("\u001b[32;1m"+board[i]+"\u001b[33;1m")
-        elif board[i]=='O':
+        elif board[i] == 'O':
             p_b[i] = ("\u001b[31;1m"+board[i]+"\u001b[33;1m")
         else:
             p_b[i] = (board[i])
-    
-
 
     print('\u001b[33;1m ')
     print('\t\t _________________')
     print('\t\t|     |     |     |')
-    print('\t\t|  '   +p_b[1]+'  |  '+p_b[2]+'  |  '+p_b[3]+'  |')
+    print('\t\t|  ' + p_b[1]+'  |  '+p_b[2]+'  |  '+p_b[3]+'  |')
     print('\t\t|_____|_____|_____|')
     print('\t\t|     |     |     |')
-    print('\t\t|  '   +p_b[4]+'  |  '+p_b[5]+'  |  '+p_b[6]+'  |')
+    print('\t\t|  ' + p_b[4]+'  |  '+p_b[5]+'  |  '+p_b[6]+'  |')
     print('\t\t|_____|_____|_____|')
     print('\t\t|     |     |     |')
-    print('\t\t|  '   +p_b[7]+'  |  '+p_b[8]+'  |  '+p_b[9]+'  |')
+    print('\t\t|  ' + p_b[7]+'  |  '+p_b[8]+'  |  '+p_b[9]+'  |')
     print('\t\t|_____|_____|_____|')
     print('\u001b[0m ')
 
 
-def main():
+def main(diff):
     printBoard(board)
 
     while not(isBoardFull(board)):
@@ -126,9 +149,10 @@ def main():
             break
 
         if not(isWinner(board, 'X')):
-            move = compMove()
+            move = compMove(diff)
             if move == 0:
                 print('\n>>> TIE GAME')
+                break
             else:
                 insertBoard('O', move)
                 print(f"\n>>> Computer placed 'O' in position {move} : ")
@@ -137,15 +161,16 @@ def main():
             print("\n>>> X's won this time! Good Job")
             break
 
-    if isBoardFull(board):
-        print('\n>>> TIE GAME')
-
 
 while True:
     answer = input('\n>>> Do you want to play again? (Y/N)\t')
-    if answer.lower() == 'y' or answer.lower() == 'yes':
-        board = [' ' for x in range(10)]
+
+    if 'y' in answer.lower():
+        print('\n>>> Input Difficulty Level :')
+        diff = int(input('\n>>> 0. dumbAI'+'\n>>> 1. noobAI' +
+                         '\n>>> 2. expertAI'+'\n>>> '))
+        board = [' ']*10
         print('_________________________________________________')
-        main()
+        main(diff % 3)
     else:
         break

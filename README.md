@@ -31,3 +31,9 @@ Some productive Python Programmes used in day to day life.
 <p align="center">
   <img src="https://github.com/smrnjeet222/Python_Apps/blob/master/Space-invaders/Sc.jpg">
 </p>
+
+# [Snake Game](https://github.com/smrnjeet222/Python_Apps/tree/master/Snake)
+
+<p align="center">
+  <img src="https://github.com/smrnjeet222/Python_Apps/blob/master/Snake/Extras/play.png">  
+</p>

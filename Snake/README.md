@@ -1,10 +1,14 @@
 # SNAKE Game 
 > Pygame 
+<p>
+  <img align="left" width="300em" src="https://github.com/smrnjeet222/Python_Apps/blob/master/Snake/Extras/game.png">
+  <img align="right" width="500em" src="https://github.com/smrnjeet222/Python_Apps/blob/master/Snake/Extras/ply.gif">
+</p>
 
-<img align="left" width="280em" src="https://github.com/smrnjeet222/Python_Apps/blob/master/Snake/Extras/game.png">
-<img align="right" width="500em" src="https://github.com/smrnjeet222/Python_Apps/blob/master/Snake/Extras/ply.gif">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### .
+
+
 ## Controls
  
 ```

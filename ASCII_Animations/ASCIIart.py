@@ -2,7 +2,7 @@ import os
 import time
 os.system('cls')
 
-filenames = ["img/1.txt", 'img/2.txt']
+filenames = ["img/img1.txt", 'img/img2.txt',"img/img3.txt","img/img4.txt","img/img5.txt","img/img6.txt","img/img7.txt","img/img8.txt"]
 
 
 def animate(filenames, delay=0.5, repeat=10):
@@ -18,4 +18,4 @@ def animate(filenames, delay=0.5, repeat=10):
             os.system('cls')
 
 
-animate(filenames, 0.2, 10)
+animate(filenames, 0, 10)

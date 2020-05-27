@@ -1,4 +1,3 @@
-
 tiler/
 auto-py-to-exe-master/
 TwilioTextApp/credentials.py
@@ -11,3 +10,4 @@ SudokuSolver/__pycache__/solver.cpython-38.pyc
 Scraping/Sudoku.com_AI_Solver.py
 JarvisAI/credentials.json
 JarvisAI/Voices
+*.vscode/

@@ -17,7 +17,6 @@ white = '\u001b[37;1m'
 red = '\u001b[31;1m'
 yel = '\u001b[33;1m'
 
-print(u"\u001b[33;1m HEll")
 
 try:
     w = (sys.argv[1])

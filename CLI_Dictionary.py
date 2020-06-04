@@ -5,6 +5,9 @@ import sys
 import time
 import os
 
+# if text appears weird uncomment below line
+# os.system("cls")
+
 reset = '\033[0m'
 bold = '\033[1m'
 italic = '\x1B[3m'
@@ -14,6 +17,7 @@ white = '\u001b[37;1m'
 red = '\u001b[31;1m'
 yel = '\u001b[33;1m'
 
+print(u"\u001b[33;1m HEll")
 
 try:
     w = (sys.argv[1])

@@ -20,8 +20,8 @@ Some productive Python Programmes used in day to day life.
 
 # [Sudoku Game](https://github.com/smrnjeet222/Python_Apps/tree/master/SudokuSolver)
 <p>
-  <img align="right" width="400em" src="https://github.com/smrnjeet222/Python_Apps/blob/master/SudokuSolver/1.png">
-  <img align="left" width="400em" src="https://github.com/smrnjeet222/Python_Apps/blob/master/SudokuSolver/2.png">
+  <img align="right" width="380em" src="https://github.com/smrnjeet222/Python_Apps/blob/master/SudokuSolver/1.png">
+  <img align="left" width="380em" src="https://github.com/smrnjeet222/Python_Apps/blob/master/SudokuSolver/2.png">
  </p>
  
  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

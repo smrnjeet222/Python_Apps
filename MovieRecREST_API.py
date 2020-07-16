@@ -1,11 +1,13 @@
 import requests
 import json
 
+
 def get_movies_from_tastedive(name):
     baseurl = "https://tastedive.com/api/similar"
-    d = {"q":name,"type":"movies","limit":5}
+    d = {"q": name, "type": "movies", "limit": 5}
     resp = requests.get(baseurl, params=d)
     return json.loads(resp.text)
+
 
 def extract_movie_titles(dic_from_get_movies):
     movie_title = list()
@@ -13,6 +15,7 @@ def extract_movie_titles(dic_from_get_movies):
     for movie in movie_info:
         movie_title.append(movie["Name"])
     return movie_title
+
 
 def get_related_titles(list_of_movie_title):
     new_list = list()
@@ -24,13 +27,17 @@ def get_related_titles(list_of_movie_title):
                 new_list.append(movie)
     return new_list
 
+
 def get_movie_data(movie_name):
-    parameters = { 't': movie_name, 'r': 'json','apikey':'your_key'}
-    omdbapi_response = requests.get('http://www.omdbapi.com/', params=parameters)
+    parameters = {'t': movie_name, 'r': 'json', 'apikey': 'your_key'}
+    omdbapi_response = requests.get(
+        'http://www.omdbapi.com/', params=parameters)
     a = json.loads(omdbapi_response.text)
     return a
 
+
 def get_movie_rating(movie_dict):
+    rotten_rating = 0
     if len(movie_dict['Ratings']) > 1:
         if movie_dict['Ratings'][1]['Source'] == 'Rotten Tomatoes':
             rotten_rating = movie_dict['Ratings'][1]['Value'][:2]
@@ -40,8 +47,10 @@ def get_movie_rating(movie_dict):
 
     return rotten_rating
 
+
 def getkey(item):
     return item[1]
+
 
 def get_sorted_recommendations(list_of_movies):
     related_movies = get_related_titles(list_of_movies)
@@ -63,5 +72,6 @@ def get_sorted_recommendations(list_of_movies):
             else:
                 sorted_list.append(temp_tuple2[i][0])
     return sorted_list
+
 
 get_sorted_recommendations(["Bridesmaids", "Sherlock Holmes"])

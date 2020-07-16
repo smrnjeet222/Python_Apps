@@ -11,3 +11,4 @@ Scraping/Sudoku.com_AI_Solver.py
 JarvisAI/credentials.json
 JarvisAI/Voices
 *.vscode/
+.ipynb_checkpoints

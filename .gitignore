@@ -12,3 +12,4 @@ JarvisAI/credentials.json
 JarvisAI/Voices
 *.vscode/
 .ipynb_checkpoints
+CertificateGenerator/input/test_data.csv

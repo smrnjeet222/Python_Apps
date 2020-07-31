@@ -11,8 +11,6 @@ Scraping/Sudoku.com_AI_Solver.py
 JarvisAI/credentials.json
 JarvisAI/Voices
 *.vscode/
-.ipynb_checkpoints
+*.ipynb_checkpoints
 CertificateGenerator/input/test_data.csv
 SudokuSolver/Visualizer.py
-
-*.ipynb linguist-vendored

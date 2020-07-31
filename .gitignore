@@ -15,4 +15,4 @@ JarvisAI/Voices
 CertificateGenerator/input/test_data.csv
 SudokuSolver/Visualizer.py
 
-*.ipynb linguist-vendored=Python
+*.ipynb linguist-vendored

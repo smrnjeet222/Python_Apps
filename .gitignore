@@ -14,3 +14,4 @@ JarvisAI/Voices
 *.ipynb_checkpoints
 CertificateGenerator/input/test_data.csv
 SudokuSolver/Visualizer.py
+*config.py

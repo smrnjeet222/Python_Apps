@@ -25,6 +25,12 @@ Some productive Python Programmes used in day to day life.
  </p>
  
  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ 
+ # [A-star Visualization](https://github.com/smrnjeet222/Python_Apps/tree/master/A-star)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Astar.png">
+</p>
 
 # [Space-Invaders](https://github.com/smrnjeet222/Python_Apps/tree/master/Space-invaders)
 
